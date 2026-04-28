@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools { maven 'maven' }
     environment {
-        NEXUS_URL = "nexus-service.nexus:8081" 
+        NEXUS_URL = "nexus-deployment.nexus.svc.cluster.local:8081"
         NEXUS_CREDENTIAL_ID = "nexus-credentials"
     }
     stages {
